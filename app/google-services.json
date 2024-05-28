@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1029741025732",
+    "project_id": "platemate-75975",
+    "storage_bucket": "platemate-75975.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029741025732:android:f224a7d8ffc8e01b47ec91",
+        "android_client_info": {
+          "package_name": "com.example.mad11"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOj9QbHqJo8erR8Sl8oLP_BoiQ2m5GY38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
