@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class Home extends AppCompatActivity {
 
@@ -21,6 +22,7 @@ public class Home extends AppCompatActivity {
     Button logout;
     FirebaseAuth auth;
     FirebaseUser user;
+    FirebaseFirestore db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,7 @@ public class Home extends AppCompatActivity {
         userDetails = findViewById(R.id.user_details);
         logout = findViewById(R.id.logout);
         user = auth.getCurrentUser();
+        db = FirebaseFirestore.getInstance();
 
         if (user == null) {
             Intent intent = new Intent(getApplicationContext(), Login.class);
